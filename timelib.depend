@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1547268426 source:g:\bbs brinkstraﬂe\git_criese\portablegit\timelib\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1547268516 source:g:\bbs brinkstraﬂe\lf6\git_criese\portablegit\timelib\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1547942740 source:g:\bbs brinkstraﬂe\lf6\git_criese\portablegit\timelib\time.c
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="https://structorizer.fisch.lu" version="3.29" preRepeat="until " postFor="to" preReturn="return" postForIn="in" preWhile="while " output="OUTPUT" input="INPUT" preFor="for" preExit="exit" preLeave="leave" ignoreCase="true" preForIn="foreach" stepFor="by" author="teilnehmer" created="2019-01-19" changedby="teilnehmer" changed="2019-01-19" origin="Structorizer 3.29" text="&#34;day_of_the_year&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;Variablen deklarieren, i, alldays, exists&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<alternative text="&#34;if exists = 1&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+			<qTrue>
+				<while text="&#34;while (i&#60;month)&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+					<qWhile>
+						<instruction text="&#34;alldays + anzahl tage vom monat&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+						<instruction text="&#34;monat --&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qWhile>
+				</while>
+				<instruction text="&#34;alldays + Anzahl der Tage&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+				<instruction text="&#34;Rückgabe alldays&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qTrue>
+			<qFalse>
+				<instruction text="&#34;return -1&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qFalse>
+		</alternative>
+	</children>
+</root>
