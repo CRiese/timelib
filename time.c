@@ -1,3 +1,6 @@
+/** Bibilothek time.c, alles über Zeiten
+**/
+
 /**
  * Die Funktion ermittelt für ein übergebenes Jahr des gregorianischen Kalenders,
  * ob es sich um ein Schaltjahr handelt.
@@ -113,3 +116,28 @@ int day_of_the_year(int day, int month, int year)
         return -1;
     }
 }
+
+ /**
+ * liest 3 Ganzzahlwerte (Integer) ein, für Tag, Monat und Jahr.
+ * Wenn das gegebene Datum ungültig ist, wird erneut eingelesen,
+ * bis ein gültiges Datum eingegeben wurde.
+ **/
+int input_date(int *day, int *month, int *year)
+{
+    do
+        {
+            printf("Bitte geben Sie einen Tag ein: \n");
+            scanf("%i", day);
+            printf("Bitte geben Sie einen Monat ein: \n");
+            scanf("%i", month);
+            printf("Bitte geben Sie ein Jahr ein: \n");
+            scanf("%i", year);
+
+        } while(exists_date(*day,*month,*year) != 1);
+
+    return 0;
+
+}
+
+
+
