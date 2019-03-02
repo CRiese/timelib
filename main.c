@@ -1,7 +1,7 @@
 /**
  * Author : Catharina Riese
  * Date : 18.12.2018
- * Welcher Tag des Jahres, soll vom eingegebenem Datum ermittelt werden
+ * Der Tag des Jahres, vom eingegebenem Datum soll ermittelt werden
  **/
 
 #include <stdio.h>
@@ -10,10 +10,12 @@
 
 int main()
 {
-    int day, month, year;
-    input_date(&day, &month, &year);
+    // Zugriff auf das Struct
+    struct time date;
+    date = input_date(date);
 
-    printf("Tag des Jahres: %i\n", day_of_the_year(day, month, year));
+    // Ausgabe des Tag des Jahres
+    printf("Tag des Jahres: %i\n", day_of_the_year(date));
 
     return 0;
 }
